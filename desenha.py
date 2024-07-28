@@ -11,7 +11,7 @@ def desenha_automato(aut):
     desenho.edge('->', aut.inicial)
     
     for estado_final in aut.finais:
-        desenho.node(estado_final, shape='doublecircle', fontsize='15', fontcolor='blue')  # Colocando círculo duplo em todos os estados finais
+        desenho.node(estado_final, shape='doublecircle', fontsize='15', fontcolor='red')  # Colocando círculo duplo em todos os estados finais
     
     for estado in aut.estados:
         for simbolo in aut.alfabeto:

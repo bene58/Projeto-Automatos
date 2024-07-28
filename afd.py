@@ -14,15 +14,8 @@ def criaAFD():
 
     for estado in estados:
         for simbolo in alfabeto:
-            print(f"\t{simbolo}")
-            print(f"{estado}\t ---->\t",end="")#end="" aqui deixa sem adicionar uma nova linha no fim
-            proxEstado = input("\n Informe o proximo estado: ").split()
-
-        if proxEstado == 0:
-            transicoes[(estado, simbolo)] = None
-        else:
-            #o automato é armazenado
-            transicoes[(estado, simbolo)] = proxEstado
+            proxEstados = input(f"Transições de {estado} com símbolo {simbolo} (separados por espaço): ").split()
+            transicoes[(estado, simbolo)] = proxEstados
 
 
     AFD = base.automato(estados, alfabeto, transicoes, estadoInicial, [], estadoFinal)

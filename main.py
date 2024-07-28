@@ -7,8 +7,8 @@ from  base import automato
 
 
 
-automatofn=afn.criaAFN()
-automatofd=converter.AFNparaAFD(automatofn)
+automatofd=afd.criaAFD()
+#automatofd=converter.AFNparaAFD(automatofd)
 
 print("\n")
 
