@@ -4,11 +4,8 @@ import converter
 import desenha
 from  base import automato
 
-
-
-
-automatofd=afd.criaAFD()
-#automatofd=converter.AFNparaAFD(automatofd)
+automatofn=afn.criaAFN()
+automatofd=converter.AFNparaAFD(automatofn)
 
 print("\n")
 

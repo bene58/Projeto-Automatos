@@ -1,6 +1,6 @@
 from graphviz import Digraph
 import random
-import os
+import os #permite que você realize tarefas como manipulação de arquivos e diretórios
 
 def desenha_automato(aut):
     desenho = Digraph()  # Definindo que a var desenho é do tipo Digraph()
